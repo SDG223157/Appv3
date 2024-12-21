@@ -575,7 +575,7 @@ def create_combined_analysis(ticker_symbol, end_date=None, lookback_days=365, cr
                 text=f'<b>Price Analysis</b><br>' + 
                      f'Start: ${start_price:.2f}<br>' +
                      f'Current: ${end_price:.2f}<br>' +
-                     f'Return: {annual_return:.2f}%',
+                     f'Return Annualized: {annual_return:.2f}%',
                 showarrow=False,
                 font=dict(size=12),
                 bgcolor='rgba(255, 255, 255, 0.8)',
@@ -643,7 +643,7 @@ def create_combined_analysis(ticker_symbol, end_date=None, lookback_days=365, cr
                 align='left'
             ),
             dict(
-                x=0.55,
+                x=0.59,
                 y=0.23,
                 xref='paper',
                 yref='paper',
