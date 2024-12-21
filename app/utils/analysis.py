@@ -660,9 +660,6 @@ def create_combined_analysis(ticker_symbol, end_date=None, lookback_days=365, cr
                 text='<b>Financial Metrics Growth</b>',
                 showarrow=False,
                 font=dict(size=14),
-                bgcolor='rgba(255, 255, 255, 0.8)',
-                bordercolor='rgba(0, 0, 0, 0.2)',
-                borderwidth=1,
                 align='left'
             ),
             dict(
@@ -673,9 +670,6 @@ def create_combined_analysis(ticker_symbol, end_date=None, lookback_days=365, cr
                 text='<b>Historical Financial Metrics</b>',
                 showarrow=False,
                 font=dict(size=14),
-                bgcolor='rgba(255, 255, 255, 0.8)',
-                bordercolor='rgba(0, 0, 0, 0.2)',
-                borderwidth=1,
                 align='left'
             )
         ],

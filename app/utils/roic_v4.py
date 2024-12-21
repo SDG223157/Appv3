@@ -309,6 +309,7 @@ def create_metrics_table(ticker, metrics, start_year, end_year):
                 *[df[col].tolist() for col in df.columns[:-1]],
                 df['CAGR %'].tolist()
             ],
+            fill_color='lightgrey',
             align='left',
             font=dict(size=11),
             format=[None, *['.2f' for _ in range(len(df.columns)-1)], '.2f%']
@@ -330,6 +331,7 @@ def create_metrics_table(ticker, metrics, start_year, end_year):
                 ),
                 cells=dict(
                     values=format_growth_values(growth_rates),  # Implement this helper function
+                    fill_color='lightgrey',
                     align='left',
                     font=dict(size=11)
                 )
